@@ -1,0 +1,6 @@
+^{:watch-dirs ["test" "src"]
+  :css-dirs ["resources/public/css"]
+  :extra-main-files {:cards {:main mck.cards}}
+  :auto-testing true}
+{:main mck.app
+ :devcards true}
