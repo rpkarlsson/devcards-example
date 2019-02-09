@@ -1,10 +1,9 @@
 # mck.app
 
-FIXME: Write a one-line description of your library/project.
+A example project using clojure-cli, Figwheel-main, Devcards, Reagent and Re-frame.
+(To be) Used at ClojureSEPL (a local meetup).
 
-## Overview
-
-FIXME: Write a paragraph about the library/project and highlight its goals.
+Start Figwheel and browse to: http://localhost:9500/devcards.html
 
 ## Development
 
@@ -20,6 +19,8 @@ get a Browser Connected REPL. An easy way to try it is:
 
 and you should see an alert in the browser window.
 
+Go to http://localhost:9500/devcards.html to view the actual code running.
+
 To clean all compiled files:
 
     rm -rf target/public
@@ -28,10 +29,3 @@ To create a production build run:
 
 	rm -rf target/public
 	clojure -A:fig:min
-
-
-## License
-
-Copyright © 2018 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
