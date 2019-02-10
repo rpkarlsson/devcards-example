@@ -2,11 +2,9 @@
   (:require
    [re-frame.core :as rf]))
 
-#_(defonce interval (js/setInterval #(rf/dispatch [:tick]) 1000))
-
 (comment
+  (def interval (js/setInterval #(rf/dispatch [:tick]) 1000))
   (js/clearInterval interval))
-
 
 ;; Events
 (rf/reg-event-fx
@@ -46,7 +44,7 @@
 ;; Subs
 (rf/reg-sub
  :query-items
- (fn [db v] (:items db)))
+ (fn [db v] (vals (:items db))))
 
 (rf/reg-sub
  :query-selected-item
